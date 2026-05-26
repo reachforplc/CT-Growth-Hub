@@ -1538,25 +1538,31 @@ function escHtml(s){
 // ════════════════════════════════════════════════════════════
 // REMOTE DATA FETCH
 // ════════════════════════════════════════════════════════════
+// File structure: data/{year}/survey_T{1|2|3}.csv and comments_T{1|2|3}.json
+// To add a new school year, add it to REMOTE_YEARS below.
 const DATA_BASE_URL = 'https://reachforplc.github.io/CT-Growth-Hub/data';
-const REMOTE_YEAR = '2024-25'; // update this each school year
+const REMOTE_YEARS = ['2026-27','2027-28']; // add new years here as data becomes available
+const DEFAULT_REMOTE_YEAR = '2026-27';      // the year the app opens on by default
 
 async function fetchRemoteData(){
-  ensureYear(REMOTE_YEAR);
   let anyLoaded = false;
   const fetches = [];
-  for(const t of [1,2,3]){
-    const tk = 't'+t;
-    fetches.push(
-      fetch(`${DATA_BASE_URL}/responses_T${t}.csv`)
-        .then(r => r.ok ? r.text() : null)
-        .then(text => { if(text){ DB[REMOTE_YEAR][tk].csv = text; anyLoaded = true; } })
-        .catch(() => {}),
-      fetch(`${DATA_BASE_URL}/comments_T${t}.json`)
-        .then(r => r.ok ? r.text() : null)
-        .then(text => { if(text){ DB[REMOTE_YEAR][tk].json = text; anyLoaded = true; } })
-        .catch(() => {})
-    );
+  for(const year of REMOTE_YEARS){
+    ensureYear(year);
+    for(const t of [1,2,3]){
+      const tk = 't'+t;
+      const y = year; // capture for closure
+      fetches.push(
+        fetch(`${DATA_BASE_URL}/${year}/survey_T${t}.csv`)
+          .then(r => r.ok ? r.text() : null)
+          .then(text => { if(text){ DB[y][tk].csv = text; anyLoaded = true; } })
+          .catch(() => {}),
+        fetch(`${DATA_BASE_URL}/${year}/comments_T${t}.json`)
+          .then(r => r.ok ? r.text() : null)
+          .then(text => { if(text){ DB[y][tk].json = text; anyLoaded = true; } })
+          .catch(() => {})
+      );
+    }
   }
   await Promise.all(fetches);
   return anyLoaded;
@@ -1589,7 +1595,7 @@ function showLoadingScreen(){
   const remoteLoaded = await fetchRemoteData();
 
   if(remoteLoaded){
-    currentYear = REMOTE_YEAR;
+    currentYear = DEFAULT_REMOTE_YEAR;
     rebuildProcessed();
     if(ALL_TEAMS.length){
       showDashboard();
