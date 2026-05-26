@@ -1535,18 +1535,74 @@ function escHtml(s){
   return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 
-(function init(){
+// ════════════════════════════════════════════════════════════
+// REMOTE DATA FETCH
+// ════════════════════════════════════════════════════════════
+const DATA_BASE_URL = 'https://reachforplc.github.io/CT-Growth-Hub/data';
+const REMOTE_YEAR = '2024-25'; // update this each school year
+
+async function fetchRemoteData(){
+  ensureYear(REMOTE_YEAR);
+  let anyLoaded = false;
+  const fetches = [];
+  for(const t of [1,2,3]){
+    const tk = 't'+t;
+    fetches.push(
+      fetch(`${DATA_BASE_URL}/responses_T${t}.csv`)
+        .then(r => r.ok ? r.text() : null)
+        .then(text => { if(text){ DB[REMOTE_YEAR][tk].csv = text; anyLoaded = true; } })
+        .catch(() => {}),
+      fetch(`${DATA_BASE_URL}/comments_T${t}.json`)
+        .then(r => r.ok ? r.text() : null)
+        .then(text => { if(text){ DB[REMOTE_YEAR][tk].json = text; anyLoaded = true; } })
+        .catch(() => {})
+    );
+  }
+  await Promise.all(fetches);
+  return anyLoaded;
+}
+
+function showLoadingScreen(){
+  const el = document.getElementById('upload-screen');
+  el.style.display = 'flex';
+  el.innerHTML = `<div style="display:flex;flex-direction:column;align-items:center;gap:16px;padding:60px 20px;">
+    <div class="upload-title">CT Growth Hub</div>
+    <div style="font-size:0.85rem;color:var(--mid-gray);">Loading data…</div>
+    <div style="width:40px;height:40px;border:3px solid var(--warm-gray);border-top-color:var(--navy);border-radius:50%;animation:spin .8s linear infinite;"></div>
+  </div>`;
+  if(!document.getElementById('spin-style')){
+    const s=document.createElement('style');
+    s.id='spin-style';
+    s.textContent='@keyframes spin{to{transform:rotate(360deg)}}';
+    document.head.appendChild(s);
+  }
+}
+
+(async function init(){
   loadInquiry();
   loadRosterFlags();
   const usel=document.getElementById('upload-year-sel');
   if(usel) usel.innerHTML=SCHOOL_YEARS.map(y=>`<option value="${y}"${y===DEFAULT_YEAR?' selected':''}>${y}</option>`).join('');
+
+  // Try to fetch remote data first
+  showLoadingScreen();
+  const remoteLoaded = await fetchRemoteData();
+
+  if(remoteLoaded){
+    currentYear = REMOTE_YEAR;
+    rebuildProcessed();
+    if(ALL_TEAMS.length){
+      showDashboard();
+      return;
+    }
+  }
+
+  // Fall back to localStorage or upload screen
   if(loadFromStorage()){
     rebuildProcessed();
-    if(ALL_TEAMS.length) showDashboard();
-    else buildUploadGrid();
-  } else {
-    buildUploadGrid();
+    if(ALL_TEAMS.length){ showDashboard(); return; }
   }
+  buildUploadGrid();
 })();
 </script>
 </body>
