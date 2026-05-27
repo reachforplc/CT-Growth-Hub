@@ -1,0 +1,437 @@
+{
+  "trimester": 2,
+  "teams": {
+    "AP Human Geography": {
+      "Curriculum": {
+        "Teacher": "Teachers across the team agreed that priority standards were established early and the curriculum map accurately reflects current pacing. Proficiency scale use was identified as an area for growth, with the team acknowledging that application varies across sections.",
+        "Coach": "The team has clear priority standards and a functional curriculum map. Proficiency scales exist but are applied inconsistently during instruction — a focus area for coaching this trimester.",
+        "Admin": "Curriculum documentation and standards alignment look solid. The next step is embedding proficiency scales more explicitly into both assessment design and student-facing feedback."
+      },
+      "Assessment": {
+        "Teacher": "Summative assessments are shared and consistent across the team, and data review happens collectively. Common formatives remain a work in progress, with the team actively building toward more structured use.",
+        "Coach": "Common summative assessments are a strength, and the team engaged well in a facilitated data analysis protocol this trimester. Formative alignment has been identified as the next growth area.",
+        "Admin": "Summative alignment is strong and data conversations happen in CT. The team's next growth edge is shifting from reactive data use to proactive formative data practice before summatives."
+      },
+      "Achievement": {
+        "Teacher": "Retakes are handled consistently and the team surfaces struggling students in CT meetings. MTSS referrals occur but are not always coordinated as a team, and extension for mastery students is an identified development area.",
+        "Coach": "Retake practices are solid. Work is underway to build a more coordinated MTSS approach, and progress is being made. Extension remains underdeveloped.",
+        "Admin": "Retake compliance is good and MTSS referrals are happening. Extension activities exist in some classrooms but have not been developed as a systematic team practice."
+      },
+      "Instruction": {
+        "Teacher": "The team has a common syllabus and shares instructional strategies regularly. Classwork totals are close but not always formally verified, and student data informs pacing and content decisions.",
+        "Coach": "Instructional sharing is a strength, with good syllabus and strategy alignment visible during walkthroughs. Classwork totals are not regularly verified, and NASOT is referenced only occasionally.",
+        "Admin": "Instructional practices are well-aligned across sections. More explicit documentation of NASOT elements in CT agendas would strengthen the connection between collaborative work and classroom practice."
+      },
+      "Group Efficacy": {
+        "Teacher": "Team culture is positive, with good equity of voice and productive meetings when there is a clear purpose. Informal roles exist but have not been formally assigned.",
+        "Coach": "Group dynamics are strong, with focused meetings and good equity of voice. Formalizing roles would improve sustainability as the team's membership and practices evolve.",
+        "Admin": "Team cohesion is evident — members are prepared and engaged. Formalizing roles would help maintain consistency as team membership changes over time."
+      }
+    },
+    "Algebra 1": {
+      "Curriculum": {
+        "Teacher": "All four teachers consistently reported that priority standards are documented and the curriculum map is current. The recognized growth area is proficiency scale use, which varies across sections despite the scales being in place.",
+        "Coach": "The curriculum foundation is strong — the map is current and referenced in CT. The coaching focus this trimester is supporting the team in making proficiency scales visible and meaningful to students.",
+        "Admin": "Priority standards are evident in lesson plans and classroom displays, and the curriculum map appears current. Proficiency scales are posted but not consistently referenced during instruction."
+      },
+      "Assessment": {
+        "Teacher": "Teachers are unified in describing strong summative alignment and consistent gradebook categories. Formative data use is actively being developed — check-ins exist, but follow-through is variable across the team.",
+        "Coach": "The assessment foundation is solid, with matching gradebook categories and regular summative data review. The coaching push is toward more structured formative data conversations.",
+        "Admin": "Assessment practices are consistent across sections. Data use is present but tends to be reactive — the goal is to see more proactive formative data use before summatives."
+      },
+      "Achievement": {
+        "Teacher": "The retake process is solid and district-compliant, and student concern lists are shared during CT. Extension for mastery students is a recognized underdeveloped area, which the team acknowledges.",
+        "Coach": "Retakes are consistent but MTSS referrals vary by teacher. Current coaching work focuses on building a shared protocol for identifying and responding to students who need additional support.",
+        "Admin": "Retake practices are solid. The team discusses achievement but would benefit from formalizing its approach to both intervention and extension to ensure consistency."
+      },
+      "Instruction": {
+        "Teacher": "A common syllabus is in place and instructional strategies are shared regularly. Classwork totals are close but not always formally verified, and student data is used to inform pacing and content decisions.",
+        "Coach": "Instructional sharing is a strength, with good syllabus and strategy alignment visible during walkthroughs. Classwork totals are not regularly verified, and NASOT use is occasional.",
+        "Admin": "Instructional alignment is solid and strategy sharing is evident. NASOT elements are present but could be more explicitly connected to the team's collaborative work."
+      },
+      "Group Efficacy": {
+        "Teacher": "All four teachers described a team that functions well together, with equity of voice, agenda-guided meetings, and prepared members. Formal roles are filled informally but not officially assigned.",
+        "Coach": "Psychological safety and equity of voice are high. Meetings are productive, and the coaching focus is on formalizing roles to sustain practices as team membership changes.",
+        "Admin": "Group culture is strong, with productive and agenda-driven meetings. Formalized roles and explicit norms documentation would take this team to the next level."
+      }
+    },
+    "Algebra 2": {
+      "Curriculum": {
+        "Teacher": "Teachers agreed that priority standards are in place and referenced regularly, and the curriculum map is solid. Proficiency scale use varies among members — a conversation about consistency has begun.",
+        "Coach": "The curriculum foundation is strong, with a current map referenced in CT. The coaching focus this trimester is supporting the team in making proficiency scales visible to students.",
+        "Admin": "Priority standards are evident in lesson plans and classroom displays, and the curriculum map appears current. Proficiency scales are posted but not consistently referenced during instruction."
+      },
+      "Assessment": {
+        "Teacher": "Summative alignment and gradebook category consistency are strong. Formative data use is actively being developed — check-ins exist but follow-through varies across the team.",
+        "Coach": "The assessment foundation is good, with aligned gradebook categories and shared summative data review. The coaching push is toward more structured formative data conversations.",
+        "Admin": "Assessment alignment looks consistent based on observations. Common summatives are in use, and the next step is ensuring formative data is driving instructional decisions between summatives."
+      },
+      "Achievement": {
+        "Teacher": "The retake process is solid and district-compliant, and student concern lists are shared in CT. Extension for mastery students is recognized as underdeveloped.",
+        "Coach": "Retake practices are solid, and coordinated MTSS work is progressing. Extension remains an underdeveloped area.",
+        "Admin": "Retake compliance is good and MTSS referrals are happening. Extension activities are present in some classrooms but have not been developed systematically as a team practice."
+      },
+      "Instruction": {
+        "Teacher": "Instructional collaboration is strong — the syllabus is shared and strategies and data are discussed regularly. Point value alignment could be tighter, and the team plans a comparison next trimester.",
+        "Coach": "Instructional culture is strong, with consistent strategy sharing and classwork totals that are close. A full classwork comparison has been requested for this trimester. NASOT elements appear in lesson observations.",
+        "Admin": "Instructional practices are aligned across sections and the common syllabus is evident. More explicit NASOT documentation in CT agendas would strengthen the team's collaborative work."
+      },
+      "Group Efficacy": {
+        "Teacher": "The team functions well together, with equity of voice, agenda-guided meetings, and prepared members. Formal roles are filled informally but not officially assigned.",
+        "Coach": "Psychological safety and equity of voice are high. Meetings are productive, and the coaching focus is on formalizing roles to sustain practices as membership changes.",
+        "Admin": "Team meetings are focused and productive based on observations, with strong equity of voice. More formalized role structures would ensure consistency over time."
+      }
+    },
+    "American Studies": {
+      "Curriculum": {
+        "Teacher": "All five teachers reported strong alignment on priority standards established early in the year, with a curriculum map that reflects current pacing. Proficiency scale use is variable across sections and has been identified as a growth area.",
+        "Coach": "The team has clear priority standards and a functional curriculum map. Proficiency scales exist but are applied inconsistently in classrooms — a coaching focus this trimester.",
+        "Admin": "Curriculum documentation and standards alignment are solid. Proficiency scales need to be used more explicitly in assessment design and student-facing feedback."
+      },
+      "Assessment": {
+        "Teacher": "Common summatives are in place and some data is used to make adjustments, but formative practices vary across the team. Developing common formatives has been identified as the next priority step.",
+        "Coach": "The assessment foundation is solid, with matching gradebook categories and shared summative data review. The coaching push is toward more structured formative data conversations.",
+        "Admin": "Summative alignment is strong and data conversations happen in CT. The growth edge is shifting toward systematic formative data use before end-of-unit results."
+      },
+      "Achievement": {
+        "Teacher": "The team has a shared retake policy aligned with district guidelines. Struggling students are discussed occasionally, but the team does not yet have a systematic approach to intervention, and extension is informal.",
+        "Coach": "Retake compliance is strong, but the team response to struggling students is still individual rather than collective. Extension is an identified gap being addressed through coaching.",
+        "Admin": "Retake requirements are consistent with district policy. More team-level coordination on MTSS referrals and a clearer extension pathway for mastery students are needed."
+      },
+      "Instruction": {
+        "Teacher": "Instructional alignment is strong, with strategy sharing at every CT meeting. Classwork totals have some drift and need a closer look, and NASOT is referenced informally but not explicitly.",
+        "Coach": "Instructional sharing is a genuine strength, with good syllabus and strategy alignment visible in walkthroughs. Classwork alignment is close but not regularly verified, and NASOT is referenced occasionally.",
+        "Admin": "Instructional alignment is solid and strategy sharing is evident. NASOT elements are present but could be more explicitly connected to the team's collaborative work."
+      },
+      "Group Efficacy": {
+        "Teacher": "All five teachers described a positive team culture where everyone contributes and meetings are productive when there is a clear purpose. Informal roles exist but have not been formally assigned.",
+        "Coach": "Group dynamics are good, with focused meetings and equity of voice. The team operates well on informal norms, and formalizing roles would strengthen sustainability.",
+        "Admin": "Team meetings are focused and productive based on observations, with strong equity of voice. More formalized role structures would ensure consistency over time."
+      }
+    },
+    "Biology": {
+      "Curriculum": {
+        "Teacher": "All four teachers agreed that priority standards are documented and the curriculum map is current. Proficiency scale use is inconsistent across sections, which has been recognized and discussed.",
+        "Coach": "Curriculum documentation is a strength and standards are visible in classrooms. The current coaching focus is moving proficiency scales from a planning document to an active instructional tool.",
+        "Admin": "Curriculum alignment across sections is good and standards are clear. Proficiency scale use varies — some teachers embed them well while others treat them as compliance documents."
+      },
+      "Assessment": {
+        "Teacher": "Common summative assessments are used across all sections, with collaborative review before administration. Common formatives are inconsistent — the team has discussed this but has not yet committed to a shared approach.",
+        "Coach": "The assessment foundation is solid, with aligned gradebook categories and shared summative data review. The coaching push is toward more structured formative data conversations.",
+        "Admin": "Assessment alignment looks consistent based on observations. Common summatives are in use, and the next step is ensuring formative data is driving instructional decisions between summatives."
+      },
+      "Achievement": {
+        "Teacher": "The team has a shared retake policy aligned with district guidelines. Struggling students are discussed occasionally, but the approach to intervention is not yet systematic, and extension remains informal.",
+        "Coach": "Retakes are consistent, but MTSS referrals vary by teacher. Current work focuses on building a shared protocol for identifying and responding to students in need.",
+        "Admin": "Retake practices are solid. The team discusses achievement but would benefit from formalizing its approach to both intervention and extension for consistency."
+      },
+      "Instruction": {
+        "Teacher": "Instructional alignment is strong, with strategy sharing at every CT meeting. Classwork totals have some drift and need closer attention, and NASOT is referenced informally but not explicitly.",
+        "Coach": "The team collaborates well on instruction, with a shared syllabus and strategy sharing happening during and between meetings. Data informs some instructional decisions.",
+        "Admin": "Instructional consistency is good and shared strategies are visible in classrooms. Data use to adjust instruction is still developing."
+      },
+      "Group Efficacy": {
+        "Teacher": "All four teachers described strong trust, equity of voice, and productive meetings with a clear agenda. Formalizing roles was identified as something that would improve efficiency.",
+        "Coach": "Group dynamics are strong, with focused meetings and equity of voice. The team operates well on informal norms, but formalizing roles would improve sustainability.",
+        "Admin": "Group culture is strong, with productive and agenda-driven meetings. Formalized roles and explicit norms documentation would take this team to the next level."
+      }
+    },
+    "Chemistry": {
+      "Curriculum": {
+        "Teacher": "All three teachers agreed that priority standards are in place and referenced regularly, and the curriculum map is solid. Proficiency scale use varies among members, and the team has had early conversations about improving consistency.",
+        "Coach": "The team has clear priority standards and a functional curriculum map. Proficiency scales exist but are applied inconsistently during classroom walkthroughs — a coaching focus.",
+        "Admin": "Curriculum alignment across sections is good and standards are clear. Proficiency scale use varies — some teachers embed them well while others treat them as compliance documents."
+      },
+      "Assessment": {
+        "Teacher": "Common summative assessments are used across all sections, with collaborative review before administration. Common formatives are still inconsistent — the team has discussed this but has not yet committed to a shared approach.",
+        "Coach": "Assessment practices are solid, with evidence of data being used to revise assessments. Common formatives are emerging but not yet consistent.",
+        "Admin": "Assessment alignment looks consistent based on observations. The next step is ensuring formative data is actively driving instructional decisions between summatives."
+      },
+      "Achievement": {
+        "Teacher": "Retakes are handled consistently and struggling students are surfaced in CT meetings. MTSS referrals are not always coordinated, and developing extension activities is a named team goal.",
+        "Coach": "Retakes are consistent, but MTSS referrals vary by teacher. Current work focuses on building a shared protocol for identifying and responding to students in need.",
+        "Admin": "Retake requirements are consistent with district policy. More team-level coordination on MTSS referrals and a clearer extension pathway for mastery students are needed."
+      },
+      "Instruction": {
+        "Teacher": "Instructional alignment is strong, with strategy sharing at every CT meeting. Classwork totals have some drift that needs attention, and NASOT is referenced informally but not explicitly.",
+        "Coach": "Instructional sharing is a genuine strength, with good syllabus and strategy alignment visible in walkthroughs. Classwork alignment is close but not regularly verified, and NASOT is referenced occasionally.",
+        "Admin": "Instructional practices are aligned across sections and the common syllabus is evident. More explicit NASOT documentation in CT agendas would strengthen the team's collaborative work."
+      },
+      "Group Efficacy": {
+        "Teacher": "All three teachers described good team dynamics, with agenda-driven meetings that stay on track and strong equity of voice. Formalizing roles has been discussed but not yet implemented.",
+        "Coach": "Team culture is strong, with all voices heard and agenda-driven meetings. The team is open to formalizing roles, which would increase efficiency and resilience.",
+        "Admin": "Team meetings are focused and productive based on observations, with strong equity of voice. More formalized role structures would ensure consistency over time."
+      }
+    },
+    "ESS": {
+      "Curriculum": {
+        "Teacher": "All three teachers agreed that standards alignment is strong and the shared map is referenced regularly by most members. More consistent application of proficiency scales across the team is a recognized need.",
+        "Coach": "The curriculum foundation is strong, with a current map referenced in CT. The coaching focus this trimester is supporting the team in making proficiency scales visible to students.",
+        "Admin": "Priority standards are evident in lesson plans and classroom displays, and the curriculum map appears current. Proficiency scales are posted but not consistently referenced during instruction."
+      },
+      "Assessment": {
+        "Teacher": "Common summative assessments are used across all sections, with collaborative review before administration. Common formatives are inconsistent — the team has discussed this but has not yet committed to a shared approach.",
+        "Coach": "The assessment foundation is solid, with matching gradebook categories and shared summative data review. The coaching push is toward more structured formative data conversations.",
+        "Admin": "Summative alignment is strong and data conversations happen in CT. The growth edge is shifting toward systematic formative data use before end-of-unit results."
+      },
+      "Achievement": {
+        "Teacher": "The team is aligned on retake requirements and flags students in need during CT. Formal MTSS coordination and extension planning have been named as growth areas for the next trimester.",
+        "Coach": "Retakes are consistent, but MTSS referrals vary by teacher. Current work supports building a shared protocol for identifying and responding to students in need.",
+        "Admin": "Retake compliance is good and MTSS referrals are happening. Extension activities exist in some classrooms but have not been developed as a systematic team practice."
+      },
+      "Instruction": {
+        "Teacher": "A common syllabus is in place and strategy sharing happens organically in CT. Classwork alignment is approximate, and the team looks at data together but could be more systematic about how data changes instruction.",
+        "Coach": "The team collaborates well on instruction, with a shared syllabus and strategy sharing happening during and between meetings. Data drives some instructional decisions.",
+        "Admin": "Instructional alignment is solid and strategy sharing is evident. NASOT elements are present but could be more explicitly connected to the team's collaborative work."
+      },
+      "Group Efficacy": {
+        "Teacher": "All three teachers described good team dynamics, with agenda-driven meetings that stay on track and strong equity of voice. Formalizing roles has been discussed but not yet implemented.",
+        "Coach": "Group dynamics are strong, with focused meetings and equity of voice. The team operates well on informal norms, but formalizing roles would improve sustainability.",
+        "Admin": "Group culture is strong, with productive and agenda-driven meetings. Formalized roles and explicit norms documentation would take this team to the next level."
+      }
+    },
+    "English 10": {
+      "Curriculum": {
+        "Teacher": "All four teachers agreed that standards are clear, posted, and the curriculum map is followed closely. Embedding proficiency scales into daily instruction and feedback is an active work in progress.",
+        "Coach": "Curriculum documentation is a strength and standards are visible in classrooms. The current coaching focus is moving proficiency scales from a planning document to an active instructional tool.",
+        "Admin": "Priority standards are evident in lesson plans and classroom displays, and the curriculum map appears current. Proficiency scales are posted but not consistently referenced during instruction."
+      },
+      "Assessment": {
+        "Teacher": "All four teachers reported strong summative alignment and consistent gradebook categories. Formative data use is being actively developed — check-ins exist but follow-through varies.",
+        "Coach": "Common summative assessments are a clear strength, and the team engaged well in a facilitated data analysis protocol this trimester. Formative alignment is the identified growth area.",
+        "Admin": "Summative alignment is strong and data conversations happen in CT. The growth edge is shifting toward proactive formative data use before end-of-unit results."
+      },
+      "Achievement": {
+        "Teacher": "The team has a shared retake policy aligned with district guidelines. Struggling students are discussed occasionally, but there is not yet a systematic team approach to intervention, and extension is informal.",
+        "Coach": "Retake practices are solid, and coordinated MTSS work is progressing. Extension remains underdeveloped.",
+        "Admin": "Retake compliance is good and MTSS referrals are happening. Extension activities exist in some classrooms but have not been developed as a systematic team practice."
+      },
+      "Instruction": {
+        "Teacher": "Instructional collaboration is strong — the syllabus is shared and strategies and data are discussed regularly. Point value alignment could be tighter, and the team plans a comparison next trimester.",
+        "Coach": "Instructional sharing is a genuine strength, with good syllabus and strategy alignment visible in walkthroughs. Classwork alignment is close but not regularly verified, and NASOT is referenced occasionally.",
+        "Admin": "Instructional practices are aligned across sections and the common syllabus is evident. More explicit NASOT documentation in CT agendas would strengthen the team's collaborative work."
+      },
+      "Group Efficacy": {
+        "Teacher": "All four teachers described a positive team culture where everyone contributes and meetings are productive with a clear purpose. Informal roles exist but have not been formally assigned.",
+        "Coach": "Team culture is strong, with all voices heard and agenda-driven meetings. Formalizing roles would increase efficiency and resilience, and the team is open to this.",
+        "Admin": "Group culture is strong, with productive and agenda-driven meetings. Formalized roles and explicit norms documentation would take this team to the next level."
+      }
+    },
+    "English 9": {
+      "Curriculum": {
+        "Teacher": "All five teachers consistently reported that priority standards are documented and the curriculum map is current. Proficiency scale use varies across sections — a recognized area for growth.",
+        "Coach": "The curriculum foundation is strong, with a current map referenced in CT. The coaching focus this trimester is supporting the team in making proficiency scales visible to students.",
+        "Admin": "Curriculum alignment across sections is good and standards are clear. Proficiency scale use varies — some teachers embed them well while others treat them as compliance documents."
+      },
+      "Assessment": {
+        "Teacher": "Common summatives are in place and some data is used to make adjustments, but formative practices vary across the team. Building common formatives is the next identified step.",
+        "Coach": "Common summative assessments are a clear strength, and the team engaged well in a facilitated data analysis protocol this trimester. Formative alignment is the identified growth area.",
+        "Admin": "Assessment practices are consistent across sections. Data use is present but tends to be reactive — the goal is more proactive use of formative data before summatives."
+      },
+      "Achievement": {
+        "Teacher": "All five teachers reported consistent retake practices aligned with district policy. MTSS referrals are individual rather than coordinated team decisions, and extension is minimal — both recognized as growth areas.",
+        "Coach": "Retakes are consistent, but MTSS referrals vary by teacher. Current work supports building a shared protocol for identifying and responding to students in need.",
+        "Admin": "Retake practices are solid. The team discusses achievement but would benefit from formalizing its approach to both intervention and extension for greater consistency."
+      },
+      "Instruction": {
+        "Teacher": "Instructional collaboration is strong — the syllabus is shared and strategies and data are discussed regularly. Point value alignment could be tighter, and a comparison is planned for next trimester.",
+        "Coach": "Instructional culture is strong, with consistent strategy sharing. Classwork totals are close, and a full comparison has been requested for this trimester. NASOT elements appear in lesson observations.",
+        "Admin": "Instructional practices are aligned across sections and the common syllabus is evident. More explicit NASOT documentation in CT agendas would strengthen collaborative work."
+      },
+      "Group Efficacy": {
+        "Teacher": "All five teachers described strong cohesion, focused and productive meetings, and high psychological safety. Formalizing roles was identified as a way to further improve team function.",
+        "Coach": "Psychological safety and equity of voice are high. Meetings are productive, and the coaching focus is on formalizing roles to sustain practices as membership changes.",
+        "Admin": "Group culture is strong, with productive and agenda-driven meetings. Formalized roles and explicit norms documentation would take this team to the next level."
+      }
+    },
+    "Geometry": {
+      "Curriculum": {
+        "Teacher": "All three teachers described strong standards alignment with a shared map that most members reference weekly. More consistent application of proficiency scales across the team is a recognized need.",
+        "Coach": "Curriculum documentation is a strength and standards are visible in classrooms. The current coaching focus is moving proficiency scales from a planning document to an active instructional tool.",
+        "Admin": "Priority standards are evident in lesson plans and classroom displays, and the curriculum map appears current. Proficiency scales are posted but not consistently referenced during instruction."
+      },
+      "Assessment": {
+        "Teacher": "Common summatives are in place and some data is used to make adjustments, but formative practices vary. Building common formatives has been identified as the next priority.",
+        "Coach": "Common summative assessments are a clear strength, and the team engaged well in a facilitated data analysis protocol this trimester. Formative alignment is the identified growth area.",
+        "Admin": "Assessment alignment looks consistent based on observations. Common summatives are in use, and the next step is ensuring formative data is driving instructional decisions between summatives."
+      },
+      "Achievement": {
+        "Teacher": "Retake practices are consistent and aligned with district policy. MTSS referrals are individual rather than coordinated team decisions, and extension is minimal — both identified growth areas.",
+        "Coach": "Retakes are consistent, but MTSS referrals vary by teacher. Current work supports building a shared protocol for identifying and responding to students in need.",
+        "Admin": "Retake compliance is good and MTSS referrals are happening. Extension activities exist in some classrooms but have not been developed as a systematic team practice."
+      },
+      "Instruction": {
+        "Teacher": "All three teachers reported a common syllabus and regular strategy sharing. Classwork totals are close but not always verified, and student data informs pacing and content decisions.",
+        "Coach": "Instructional culture is strong, with consistent strategy sharing. Classwork totals are close, and a full comparison has been requested for this trimester. NASOT elements appear in lesson observations.",
+        "Admin": "Instructional consistency is good and shared strategies are visible in classrooms. Data use to adjust instruction is still developing."
+      },
+      "Group Efficacy": {
+        "Teacher": "All three teachers described a well-functioning team with equity of voice, agenda-guided meetings, and prepared members. Formal roles are filled informally but not officially assigned.",
+        "Coach": "Psychological safety and equity of voice are high. Meetings are productive, and the coaching focus is on formalizing roles to sustain practices as membership changes.",
+        "Admin": "Team meetings are focused and productive based on observations, with strong equity of voice. More formalized role structures would ensure consistency over time."
+      }
+    },
+    "Government": {
+      "Curriculum": {
+        "Teacher": "All three teachers reported that priority standards are documented and the curriculum map is current. Proficiency scale use varies across sections — a recognized and discussed area for growth.",
+        "Coach": "Curriculum documentation is a strength and standards are visible in classrooms. The current coaching focus is moving proficiency scales from a planning document to an active instructional tool.",
+        "Admin": "Priority standards are evident in lesson plans and classroom displays, and the curriculum map appears current. Proficiency scales are posted but not consistently referenced during instruction."
+      },
+      "Assessment": {
+        "Teacher": "Summative assessments are shared and consistent, with collective data review and evidence of assessments being revised based on results. Common formatives remain a work in progress.",
+        "Coach": "Common summative assessments are a clear strength, and the team engaged well in a facilitated data analysis protocol this trimester. Formative alignment is the identified growth area.",
+        "Admin": "Summative alignment is strong and data conversations happen in CT. The growth edge is shifting toward systematic formative data use before end-of-unit results."
+      },
+      "Achievement": {
+        "Teacher": "The retake process is solid and district-compliant, with student concern lists shared in CT. Extension for mastery students is recognized as underdeveloped.",
+        "Coach": "Retake compliance is strong, but the team response to struggling students is still individual rather than collective. Extension is an identified gap being addressed through coaching.",
+        "Admin": "Retake practices are solid. The team discusses achievement but would benefit from formalizing its approach to both intervention and extension for consistency."
+      },
+      "Instruction": {
+        "Teacher": "Instructional alignment is strong, with strategy sharing at every CT meeting. Classwork totals have some drift and need attention, and NASOT is referenced informally but not explicitly.",
+        "Coach": "Instructional sharing is a genuine strength, with good syllabus and strategy alignment visible in walkthroughs. Classwork alignment is close but not regularly verified, and NASOT is referenced occasionally.",
+        "Admin": "Instructional practices are aligned across sections and the common syllabus is evident. More explicit NASOT documentation in CT agendas would strengthen the team's collaborative work."
+      },
+      "Group Efficacy": {
+        "Teacher": "All three teachers described a positive team culture where everyone contributes and meetings are productive with a clear purpose. Informal roles exist but have not been formally assigned.",
+        "Coach": "Psychological safety and equity of voice are high. Meetings are productive, and the coaching focus is on formalizing roles to sustain practices as membership changes.",
+        "Admin": "Team cohesion is evident — members are prepared and engaged. Formalizing roles would help maintain consistency as team membership evolves across school years."
+      }
+    },
+    "Precalculus": {
+      "Curriculum": {
+        "Teacher": "Both teachers reported strong standards alignment established early in the year, with a curriculum map that reflects current pacing. Proficiency scale use varies and has been identified as a growth area.",
+        "Coach": "Curriculum documentation is a strength and standards are visible in classrooms. The current coaching focus is moving proficiency scales from a planning document to an active instructional tool.",
+        "Admin": "Curriculum documentation and standards alignment are solid. Proficiency scales need to be used more explicitly in assessment design and student-facing feedback."
+      },
+      "Assessment": {
+        "Teacher": "Both teachers described assessment alignment as a genuine strength — common summatives are built and shared formatives are in development. Data review happens at least every other meeting.",
+        "Coach": "Common summative assessments are a clear strength, and the team engaged well in a facilitated data analysis protocol this trimester. Formative alignment is the identified growth area.",
+        "Admin": "Assessment practices are consistent across sections. Data use is present but tends to be reactive — the goal is more proactive use of formative data before summatives."
+      },
+      "Achievement": {
+        "Teacher": "Both teachers described consistent retake handling and regular surfacing of struggling students in CT. MTSS referrals are not always coordinated, and developing extension activities is a named team goal.",
+        "Coach": "Retake practices are solid, and coordinated MTSS work is progressing. Extension remains underdeveloped.",
+        "Admin": "Retake requirements are consistent with district policy. More team-level coordination on MTSS referrals and a clearer extension pathway for mastery students are needed."
+      },
+      "Instruction": {
+        "Teacher": "Both teachers reported strong instructional alignment with strategy sharing at every CT meeting. Classwork totals have some drift that needs closer attention, and NASOT is referenced informally but not explicitly.",
+        "Coach": "Instructional sharing is a genuine strength, with good syllabus and strategy alignment visible in walkthroughs. Classwork alignment is close but not regularly verified, and NASOT is referenced occasionally.",
+        "Admin": "Instructional practices are aligned across sections and the common syllabus is evident. More explicit NASOT documentation in CT agendas would strengthen collaborative work."
+      },
+      "Group Efficacy": {
+        "Teacher": "Both teachers described a positive team culture where everyone contributes and meetings are productive with a clear purpose. Informal roles exist but have not been formally assigned.",
+        "Coach": "Group dynamics are strong, with focused meetings and equity of voice. The team operates well on informal norms, but formalizing roles would improve sustainability.",
+        "Admin": "Group culture is strong, with productive and agenda-driven meetings. Formalized roles and explicit norms documentation would take this team to the next level."
+      }
+    },
+    "Spanish 1": {
+      "Curriculum": {
+        "Teacher": "All three teachers reported strong standards alignment with a shared map referenced by most members weekly. More consistent application of proficiency scales across the team is a recognized priority.",
+        "Coach": "Curriculum documentation is a strength and standards are visible in classrooms. The current coaching focus is moving proficiency scales from a planning document to an active instructional tool.",
+        "Admin": "Curriculum documentation and standards alignment are solid. Proficiency scales need to be used more explicitly in assessment design and student-facing feedback."
+      },
+      "Assessment": {
+        "Teacher": "All three teachers identified assessment alignment as a genuine strength, with common summatives built and shared formatives in development. Data review happens at least every other meeting.",
+        "Coach": "Assessment practices are solid, with evidence of data being used to revise assessments. Common formatives are emerging but not yet consistent.",
+        "Admin": "Assessment alignment looks consistent based on observations. Common summatives are in use, and the next step is ensuring formative data is driving instructional decisions between summatives."
+      },
+      "Achievement": {
+        "Teacher": "All three teachers reported alignment on retake requirements and consistent flagging of students in need during CT. Formal MTSS coordination and extension planning are named as growth areas.",
+        "Coach": "Retake practices are solid, and coordinated MTSS work is progressing. Extension remains underdeveloped.",
+        "Admin": "Retake compliance is good and MTSS referrals are happening. Extension activities exist in some classrooms but have not been developed as a systematic team practice."
+      },
+      "Instruction": {
+        "Teacher": "Instructional alignment is strong, with strategy sharing at every CT meeting. Classwork totals have some drift that needs attention, and NASOT is referenced informally but not explicitly.",
+        "Coach": "The team collaborates well on instruction, with a shared syllabus and strategy sharing happening during and between meetings. Data drives some instructional decisions.",
+        "Admin": "Instructional practices are aligned across sections and the common syllabus is evident. More explicit NASOT documentation in CT agendas would strengthen collaborative work."
+      },
+      "Group Efficacy": {
+        "Teacher": "All three teachers described good team dynamics with agenda-driven meetings that stay on track and strong equity of voice. Formalizing roles has been discussed but not yet implemented.",
+        "Coach": "Psychological safety and equity of voice are high. Meetings are productive, and the coaching focus is on formalizing roles to sustain practices as membership changes.",
+        "Admin": "Team meetings are focused and productive based on observations, with strong equity of voice. More formalized role structures would ensure consistency over time."
+      }
+    },
+    "Spanish 2": {
+      "Curriculum": {
+        "Teacher": "All three teachers reported strong standards alignment established early in the year, with a curriculum map that reflects current pacing. Proficiency scale use varies across sections and is identified as a growth area.",
+        "Coach": "The team has clear priority standards and a functional curriculum map. Proficiency scales exist but are applied inconsistently in classrooms — a coaching focus this trimester.",
+        "Admin": "Curriculum alignment across sections is good and standards are clear. Proficiency scale use varies — some teachers embed them well while others treat them as compliance documents."
+      },
+      "Assessment": {
+        "Teacher": "All three teachers described strong summative alignment and consistent gradebook categories. Formative data use is actively being developed — check-ins exist but follow-through varies.",
+        "Coach": "Common summative assessments are a clear strength, and the team engaged well in a facilitated data analysis protocol this trimester. Formative alignment is the identified growth area.",
+        "Admin": "Assessment alignment looks consistent based on observations. Common summatives are in use, and the next step is ensuring formative data is actively driving instructional decisions between summatives."
+      },
+      "Achievement": {
+        "Teacher": "The team has a shared retake policy aligned with district guidelines. Struggling students are discussed occasionally, but there is not yet a systematic team approach to intervention, and extension remains informal.",
+        "Coach": "Retake compliance is strong, but the team response to struggling students is still individual rather than collective. Extension is an identified gap being addressed through coaching.",
+        "Admin": "Retake requirements are consistent with district policy. More team-level coordination on MTSS referrals and a clearer extension pathway for mastery students are needed."
+      },
+      "Instruction": {
+        "Teacher": "All three teachers reported that a common syllabus is in place and strategy sharing happens organically in CT. Classwork alignment is approximate, and the team could be more systematic about how data changes instruction.",
+        "Coach": "Instructional sharing is a genuine strength, with good syllabus and strategy alignment visible in walkthroughs. Classwork alignment is close but not regularly verified, and NASOT is referenced occasionally.",
+        "Admin": "Instructional consistency is good and shared strategies are visible in classrooms. Data use to adjust instruction is still developing."
+      },
+      "Group Efficacy": {
+        "Teacher": "All three teachers described a well-functioning team with equity of voice, agenda-guided meetings, and prepared members. Formal roles are filled informally but not officially assigned.",
+        "Coach": "Team culture is strong, with all voices heard and agenda-driven meetings. Formalizing roles would increase efficiency and resilience, and the team is open to this.",
+        "Admin": "Team meetings are focused and productive based on observations, with strong equity of voice. More formalized role structures would ensure consistency over time."
+      }
+    },
+    "U.S. Lit": {
+      "Curriculum": {
+        "Teacher": "All three teachers reported that priority standards are in place and referenced regularly, with a solid curriculum map. Proficiency scale use varies among members — a conversation about improving consistency has begun.",
+        "Coach": "The curriculum foundation is strong, with a current map referenced in CT. The coaching focus this trimester is supporting the team in making proficiency scales visible to students.",
+        "Admin": "Curriculum alignment across sections is good and standards are clear. Proficiency scale use varies — some teachers embed them well while others treat them as compliance documents."
+      },
+      "Assessment": {
+        "Teacher": "All three teachers identified assessment alignment as a genuine strength, with common summatives built and shared formatives in development. Data review happens at least every other meeting.",
+        "Coach": "Common summative assessments are a clear strength, and the team engaged well in a facilitated data analysis protocol this trimester. Formative alignment is the identified growth area.",
+        "Admin": "Assessment practices are consistent across sections. Data use is present but tends to be reactive — the goal is more proactive use of formative data before summatives."
+      },
+      "Achievement": {
+        "Teacher": "All three teachers reported consistent retake practices aligned with district policy. MTSS referrals are individual rather than coordinated team decisions, and extension is minimal — both recognized growth areas.",
+        "Coach": "Retake compliance is strong, but the team response to struggling students is still individual rather than collective. Extension is an identified gap being addressed through coaching.",
+        "Admin": "Retake compliance is good and MTSS referrals are happening. Extension activities exist in some classrooms but have not been developed as a systematic team practice."
+      },
+      "Instruction": {
+        "Teacher": "All three teachers reported a common syllabus and regular strategy sharing. Classwork totals are close but not always verified, and student data informs pacing and content decisions.",
+        "Coach": "Instructional sharing is a genuine strength, with good syllabus and strategy alignment visible in walkthroughs. Classwork alignment is close but not regularly verified, and NASOT is referenced occasionally.",
+        "Admin": "Instructional consistency is good and shared strategies are visible in classrooms. Data use to adjust instruction is still developing."
+      },
+      "Group Efficacy": {
+        "Teacher": "All three teachers described strong trust, equity of voice, and focused and productive meetings with a clear agenda. Formalizing roles was identified as something that would improve efficiency.",
+        "Coach": "Group dynamics are strong, with focused meetings and equity of voice. The team operates well on informal norms, but formalizing roles would improve sustainability.",
+        "Admin": "Team meetings are focused and productive based on observations, with strong equity of voice. More formalized role structures would ensure consistency over time."
+      }
+    },
+    "World History": {
+      "Curriculum": {
+        "Teacher": "Both teachers agreed that standards are clear, posted, and the curriculum map is followed closely. Embedding proficiency scales into daily instruction and feedback remains an active area of development.",
+        "Coach": "The curriculum foundation is strong, with a current map referenced in CT. The coaching focus this trimester is supporting the team in making proficiency scales visible to students.",
+        "Admin": "Priority standards are evident in lesson plans and classroom displays, and the curriculum map appears current. Proficiency scales are posted but not consistently referenced during instruction."
+      },
+      "Assessment": {
+        "Teacher": "Both teachers described shared and consistent summative assessments, with collective data review and evidence of assessment revision. Common formatives remain a work in progress.",
+        "Coach": "The assessment foundation is solid, with aligned gradebook categories and shared summative data review. The coaching push is toward more structured formative data conversations.",
+        "Admin": "Assessment practices are consistent across sections. Data use is present but tends to be reactive — the goal is more proactive use of formative data before summatives."
+      },
+      "Achievement": {
+        "Teacher": "Both teachers reported consistent retake practices aligned with district policy. MTSS referrals are individual rather than coordinated team decisions, and extension is minimal — both recognized growth areas.",
+        "Coach": "Retake compliance is strong, but the team response to struggling students is still individual rather than collective. Extension is an identified gap being addressed through coaching.",
+        "Admin": "Retake practices are solid. The team discusses achievement but would benefit from formalizing its approach to both intervention and extension for greater consistency."
+      },
+      "Instruction": {
+        "Teacher": "Both teachers identified a common syllabus and shared strategies as strengths, with data being reviewed and used to adjust instruction. Classwork alignment is decent but checked only quarterly.",
+        "Coach": "Instructional culture is strong, with consistent strategy sharing. Classwork totals are close, and a full comparison has been requested for this trimester. NASOT elements appear in lesson observations.",
+        "Admin": "Instructional consistency is good and shared strategies are visible in classrooms. Data use to adjust instruction is still developing."
+      },
+      "Group Efficacy": {
+        "Teacher": "Both teachers described strong trust, equity of voice, and focused and productive meetings with a clear agenda. Formalizing roles was identified as something that would improve efficiency.",
+        "Coach": "Psychological safety and equity of voice are high. Meetings are productive, and the coaching focus is on formalizing roles to sustain practices as membership changes.",
+        "Admin": "Team cohesion is evident — members are prepared and engaged. Formalizing roles would help maintain consistency as team membership evolves across school years."
+      }
+    }
+  }
+}
