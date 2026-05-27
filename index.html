@@ -922,6 +922,8 @@ function renderSingleTri(team,t,panel){
   const triData=PROCESSED[t]?.[team];
   if(panel==='left'||panel==='both') renderSingleScores(team,t,triData);
   if(panel==='right'||panel==='both'){drawSpider(triData);renderSingleComments(team,t);}
+  // Keep inquiry in sync with selected trimester
+  renderInquiry(team,t);
 }
 
 function renderSingleScores(team,t,triData){
@@ -1527,8 +1529,7 @@ function renderInquiry(team, tri){
 }
 
 function switchInquiryTri(team, tri){
-  renderInquiry(team, tri);
-  renderSingleTri(team, tri, 'both');
+  renderSingleTri(team, tri, 'both'); // renderSingleTri now calls renderInquiry internally
 }
 
 function escHtml(s){
