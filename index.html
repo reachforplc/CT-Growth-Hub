@@ -530,6 +530,9 @@ function badgeCls(s){return!s||s<1.75?'bl':s>=2.5?'bh':'bm';}
 function dotCls(s){return!s||s<1.75?'dl':s>=2.5?'dh':'dm';}
 function slug(s){return s.replace(/[^a-z0-9]/gi,'-').toLowerCase();}
 
+function ensureYear(y){ if(!DB[y]) DB[y]={t1:{csv:null,json:null},t2:{csv:null,json:null},t3:{csv:null,json:null}}; }
+function yearDB(y){ ensureYear(y); return DB[y]; }
+
 // ════════════════════════════════════════════════════════════
 // PROCESSED DATA CACHE
 // ════════════════════════════════════════════════════════════
