@@ -25,8 +25,6 @@ body{background:#c8c4bc;font-family:'DM Sans',sans-serif;color:var(--text);min-h
 .topbar-right{display:flex;align-items:center;gap:8px;flex-shrink:0;}
 .icon-btn{background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.22);color:white;padding:6px 13px;border-radius:6px;font-family:'DM Sans',sans-serif;font-size:0.76rem;font-weight:600;cursor:pointer;transition:background .15s;}
 .icon-btn:hover{background:rgba(255,255,255,0.22);}
-.add-year-btn{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);color:white;padding:6px 13px;border-radius:6px;font-family:'DM Sans',sans-serif;font-size:0.76rem;font-weight:600;cursor:pointer;transition:background .15s;display:flex;align-items:center;gap:5px;}
-.add-year-btn:hover{background:rgba(255,255,255,.22);}
 .year-badge-wrap{display:flex;align-items:center;gap:8px;}
 .year-badge-wrap label{font-size:0.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:rgba(255,255,255,.5);}
 .year-display{font-size:0.88rem;font-weight:700;color:white;background:rgba(255,255,255,.15);padding:4px 12px;border-radius:6px;}
@@ -44,35 +42,11 @@ body{background:#c8c4bc;font-family:'DM Sans',sans-serif;color:var(--text);min-h
 .dh{background:var(--green-dark);}.dm{background:var(--green-light);}.dl{background:var(--red);}.dn{background:#ccc;}
 /* ── MAIN CONTENT ── */
 #main{padding:16px 18px;}
-/* ── UPLOAD SCREEN ── */
-#upload-screen{display:flex;flex-direction:column;align-items:center;padding:40px 20px;}
-.upload-title{font-family:'DM Serif Display',serif;font-size:1.8rem;color:var(--navy);margin-bottom:8px;}
-.upload-sub{font-size:0.85rem;color:var(--mid-gray);margin-bottom:32px;}
+/* ── LOADING SCREEN ── */
+#loading-screen{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:60px 20px;min-height:60vh;}
+.loading-title{font-family:'DM Serif Display',serif;font-size:1.8rem;color:var(--navy);margin-bottom:12px;}
 /* ── YEAR SELECTOR ── */
 .year-badge{background:rgba(255,255,255,.15);color:white;font-size:0.72rem;font-weight:700;padding:4px 10px;border-radius:5px;letter-spacing:.03em;}
-/* upload year row */
-.upload-year-row{display:flex;align-items:center;gap:12px;margin-bottom:24px;}
-.upload-year-row label{font-size:0.85rem;font-weight:600;color:var(--navy);}
-.upload-year-sel{border:2px solid var(--warm-gray);background:white;padding:7px 32px 7px 12px;border-radius:7px;font-family:'DM Sans',sans-serif;font-size:0.9rem;font-weight:600;color:var(--navy);cursor:pointer;appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%236b6560'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 10px center;}
-.upload-year-sel:focus{border-color:var(--navy);outline:none;}
-.upload-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:820px;width:100%;}
-.upload-card{background:white;border-radius:12px;padding:18px;box-shadow:0 2px 8px rgba(0,0,0,.08);}
-.upload-card h3{font-size:0.9rem;font-weight:700;color:var(--navy);margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid var(--warm-gray);}
-.upload-row{margin-bottom:12px;}
-.upload-row label{display:block;font-size:0.7rem;font-weight:600;text-transform:uppercase;letter-spacing:.07em;color:var(--mid-gray);margin-bottom:5px;}
-.file-upload-btn{display:flex;align-items:center;gap:7px;background:var(--warm-gray);border:2px dashed #c0bab2;border-radius:7px;padding:8px 12px;cursor:pointer;transition:all .15s;width:100%;}
-.file-upload-btn:hover{border-color:var(--navy);background:var(--light-gray);}
-.file-upload-btn span{font-size:0.72rem;color:var(--mid-gray);}
-.file-upload-btn.loaded{border-color:var(--green-light);background:var(--green-bg);}
-.file-upload-btn.loaded span{color:var(--green-dark);}
-.file-input{display:none;}
-.upload-card .clear-btn{font-size:0.68rem;color:var(--red);background:none;border:none;cursor:pointer;padding:0;font-family:'DM Sans',sans-serif;margin-top:6px;}
-.upload-status{font-size:0.7rem;color:var(--mid-gray);margin-top:4px;min-height:14px;}
-.upload-status.ok{color:var(--green-dark);}
-.upload-status.err{color:var(--red);}
-.load-btn{background:var(--navy);color:white;border:none;padding:12px 32px;border-radius:8px;font-family:'DM Sans',sans-serif;font-size:0.9rem;font-weight:600;cursor:pointer;margin-top:24px;}
-.load-btn:hover{opacity:.9;}
-.load-btn:disabled{opacity:.4;cursor:not-allowed;}
 /* ── TRI TABS ── */
 .tri-tabs{display:flex;border-bottom:1px solid var(--warm-gray);background:var(--light-gray);}
 .tri-tab{padding:7px 18px;font-size:0.75rem;font-weight:600;cursor:pointer;border-bottom:2px solid transparent;color:var(--mid-gray);transition:all .15s;font-family:'DM Sans',sans-serif;background:none;border-top:none;border-left:none;border-right:none;}
@@ -242,25 +216,6 @@ body{background:#c8c4bc;font-family:'DM Sans',sans-serif;color:var(--text);min-h
 .rater-text{font-size:0.76rem;line-height:1.65;color:var(--text);}
 .rater-text.empty{color:#bbb;font-style:italic;}
 .no-comments{padding:14px;font-size:0.74rem;color:var(--mid-gray);font-style:italic;text-align:center;}
-/* ── MANAGE DATA MODAL ── */
-#modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:200;align-items:center;justify-content:center;}
-#modal-overlay.open{display:flex;}
-.modal{background:white;border-radius:14px;padding:24px;max-width:680px;width:calc(100%-32px);max-height:80vh;overflow-y:auto;}
-.modal h2{font-family:'DM Serif Display',serif;font-size:1.3rem;color:var(--navy);margin-bottom:16px;}
-.modal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:18px;}
-.modal-tri{background:var(--light-gray);border-radius:8px;padding:14px;}
-.modal-tri h3{font-size:0.78rem;font-weight:700;color:var(--navy);margin-bottom:10px;}
-.modal-file-row{margin-bottom:8px;}
-.modal-file-row label{display:block;font-size:0.65rem;font-weight:600;text-transform:uppercase;letter-spacing:.07em;color:var(--mid-gray);margin-bottom:4px;}
-.mf-btn{display:flex;align-items:center;gap:6px;background:white;border:2px dashed #c0bab2;border-radius:6px;padding:7px 10px;cursor:pointer;width:100%;transition:all .15s;}
-.mf-btn:hover{border-color:var(--navy);}
-.mf-btn.loaded{border-color:var(--green-light);background:var(--green-bg);}
-.mf-btn span{font-size:0.68rem;color:var(--mid-gray);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-.mf-btn.loaded span{color:var(--green-dark);}
-.mf-clear{font-size:0.65rem;color:var(--red);background:none;border:none;cursor:pointer;padding:2px 0;font-family:'DM Sans',sans-serif;}
-.modal-close{background:var(--navy);color:white;border:none;padding:9px 24px;border-radius:7px;font-family:'DM Sans',sans-serif;font-weight:600;cursor:pointer;font-size:0.82rem;}
-.modal-close:hover{opacity:.9;}
-.file-input{display:none;}
 @media print{
   body{background:white;}
   .topbar,.chips-bar,#modal-overlay,.expand-bar,.icon-btn{display:none!important;}
@@ -293,8 +248,6 @@ body{background:#c8c4bc;font-family:'DM Sans',sans-serif;color:var(--text);min-h
       <label>Year:</label>
       <select class="year-select" id="year-display" onchange="switchYear(this.value)"></select>
     </div>
-    <button class="add-year-btn" id="add-year-btn" onclick="goToUpload()" style="display:none;">+ New Year / Upload</button>
-    <button class="icon-btn" id="manage-btn" onclick="openModal()" style="display:none;">⚙ Manage Data</button>
   </div>
 </div>
 
@@ -307,17 +260,11 @@ body{background:#c8c4bc;font-family:'DM Sans',sans-serif;color:var(--text);min-h
 <!-- MAIN -->
 <div id="main">
 
-  <!-- UPLOAD SCREEN -->
-  <div id="upload-screen">
-    <div class="upload-title">CT Growth Hub</div>
-    <div class="upload-sub">Upload survey CSV and comment JSON files to get started. Data is saved in your browser between sessions.</div>
-    <div class="upload-year-row">
-      <label>School Year:</label>
-      <select class="upload-year-sel" id="upload-year-sel"></select>
-    </div>
-    <div class="upload-grid" id="upload-grid"></div>
-    <button class="load-btn" id="load-btn" onclick="loadData()">Load Data →</button>
-    <button id="back-to-dashboard-btn" onclick="showDashboard()" style="display:none;margin-top:12px;background:none;border:none;color:var(--navy);font-family:'DM Sans',sans-serif;font-size:0.85rem;font-weight:600;cursor:pointer;text-decoration:underline;">← Back to current year's data</button>
+  <!-- LOADING SCREEN -->
+  <div id="loading-screen">
+    <div class="loading-title">CT Growth Hub</div>
+    <div style="font-size:0.85rem;color:var(--mid-gray);margin-bottom:20px;">Loading data…</div>
+    <div style="width:40px;height:40px;border:3px solid var(--warm-gray);border-top-color:var(--navy);border-radius:50%;animation:spin .8s linear infinite;"></div>
   </div>
 
   <!-- SINGLE TEAM VIEW -->
@@ -394,19 +341,10 @@ body{background:#c8c4bc;font-family:'DM Sans',sans-serif;color:var(--text);min-h
     </div>
   </div>
 </div>
-<div id="modal-overlay">
-  <div class="modal">
-    <h2>Manage Survey Data</h2>
-    <div class="modal-grid" id="modal-grid"></div>
-    <button class="modal-close" onclick="closeModal()">Done</button>
-  </div>
-</div>
-
 <script>
 // ════════════════════════════════════════════════════════════
 // DATA LAYER
 // ════════════════════════════════════════════════════════════
-const STORAGE_KEY = 'ct_hub_data_v2';
 const SCHOOL_YEARS = ['2026-27','2027-28','2028-29','2029-30','2030-31','2031-32','2032-33','2033-34','2034-35','2035-36'];
 const DEFAULT_YEAR = '2026-27';
 // DB structure: { '2024-25': { t1:{csv,json}, t2:{csv,json}, t3:{csv,json} }, ... }
@@ -440,6 +378,7 @@ const SCORE_COLS = {
   ],
   'GROUP EFFICACY': [
     'Is there equity of voice in your CT?',
+    'Which of the four PLC questions do you spend the most time on?',
     'Do you feel your CT is a safe place to be honest, genuine, and vulnerable?',
     'Are there formalized roles in your CT?',
     'Does your CT regularly have a set agenda that focuses on curriculum, assessment, instruction, or student achievement? Does each item include a clear intended outcome or product?',
@@ -449,8 +388,6 @@ const SCORE_COLS = {
 };
 const DOMAIN_KEYS = Object.keys(SCORE_COLS);
 const DOMAIN_DISPLAY = ['Curriculum','Assessment','Achievement','Instruction','Group Efficacy'];
-const PLC_COL = 'Which of the four PLC questions do you spend the most time on?';
-const PLC_LABELS = ['Q1: What do we want students to learn?','Q2: How will we know they learned it?','Q3: What do we do when they don\'t learn?','Q4: What do we do when they already know it?'];
 const SHORT_Q = {
   'Does CT have priority standards/ supporting standards?':'Priority standards identified',
   'Are assessments aligned with priority standards?':'Assessments aligned to standards',
@@ -469,6 +406,7 @@ const SHORT_Q = {
   'Does CT analyze student data to improve instruction?':'Student data analyzed for instruction',
   'Does CT use NASOT (National Assessment of Student Outcomes & Teaching) elements effectively?':'NASOT elements used effectively',
   'Is there equity of voice in your CT?':'Equity of voice',
+  'Which of the four PLC questions do you spend the most time on?':'Most-used PLC question',
   'Do you feel your CT is a safe place to be honest, genuine, and vulnerable?':'Psychological safety',
   'Are there formalized roles in your CT?':'Formalized roles',
   'Does your CT regularly have a set agenda that focuses on curriculum, assessment, instruction, or student achievement? Does each item include a clear intended outcome or product?':'Set agenda with clear outcomes',
@@ -581,30 +519,7 @@ function processCSV(rows){
       }
     }
   }
-
-  // Collect PLC question selections (multi-select, not scored)
-  // plcData: tri -> team -> counts [q1,q2,q3,q4]
-  const plcData={};
-  const plcColKey=Object.keys(rows[0]||{}).find(k=>k.trim().toLowerCase().includes('plc questions')||k.trim().toLowerCase().includes('four plc'));
-  if(plcColKey){
-    for(const row of rows){
-      const tri=parseInt((row[triCol]||'').trim());
-      const team=normTeam(row[teamCol]);
-      if(!tri||!team)continue;
-      if(!plcData[tri])plcData[tri]={};
-      if(!plcData[tri][team])plcData[tri][team]=[0,0,0,0];
-      const val=(row[plcColKey]||'').trim();
-      if(!val)continue;
-      // Selections may be comma-separated or individual checkboxes like "1, 3"
-      const selections=val.split(/[,;]+/).map(s=>s.trim()).filter(Boolean);
-      for(const sel of selections){
-        const n=parseInt(sel);
-        if(n>=1&&n<=4)plcData[tri][team][n-1]++;
-      }
-    }
-  }
-
-  return {processed, plcData};
+  return processed;
 }
 
 function round2(n){return Math.round(n*100)/100;}
@@ -616,57 +531,24 @@ function dotCls(s){return!s||s<1.75?'dl':s>=2.5?'dh':'dm';}
 function slug(s){return s.replace(/[^a-z0-9]/gi,'-').toLowerCase();}
 
 // ════════════════════════════════════════════════════════════
-// STORAGE
-// ════════════════════════════════════════════════════════════
-function ensureYear(y){ if(!DB[y]) DB[y]={t1:{csv:null,json:null},t2:{csv:null,json:null},t3:{csv:null,json:null}}; }
-function yearDB(y){ ensureYear(y); return DB[y]; }
-function saveToStorage(){
-  try{localStorage.setItem(STORAGE_KEY,JSON.stringify({db:DB,currentYear}));}catch(e){console.warn('Storage full',e);}
-}
-function loadFromStorage(){
-  try{
-    const s=localStorage.getItem(STORAGE_KEY);
-    if(s){
-      const parsed=JSON.parse(s);
-      // Handle both old v1 format and new v2 format
-      if(parsed.db){DB=parsed.db;currentYear=parsed.currentYear||DEFAULT_YEAR;}
-      else{
-        // Migrate v1 data into default year
-        DB[DEFAULT_YEAR]=parsed;
-        currentYear=DEFAULT_YEAR;
-      }
-      return true;
-    }
-  }catch(e){}
-  return false;
-}
-
-// ════════════════════════════════════════════════════════════
 // PROCESSED DATA CACHE
 // ════════════════════════════════════════════════════════════
 let PROCESSED={};  // tri -> team -> rater -> domain data
 let COMMENTS={};   // tri -> team -> domain -> {Teacher,Coach,Admin}
-let PLC_DATA={};   // tri -> team -> [q1count,q2count,q3count,q4count]
 let ALL_TEAMS=[];
 
 let currentTeam=null;
 let currentSingleTri=1;
 
 function rebuildProcessed(){
-  PROCESSED={};COMMENTS={};PLC_DATA={};
+  PROCESSED={};COMMENTS={};
   const ydb=yearDB(currentYear);
   for(const t of [1,2,3]){
     const tk='t'+t;
     if(ydb[tk].csv){
       const rows=parseCSV(ydb[tk].csv);
-      const result=processCSV(rows);
-      if(result){
-        Object.assign(PROCESSED,result.processed);
-        for(const [tri,teams] of Object.entries(result.plcData||{})){
-          PLC_DATA[tri]=PLC_DATA[tri]||{};
-          Object.assign(PLC_DATA[tri],teams);
-        }
-      }
+      const pd=processCSV(rows);
+      if(pd)Object.assign(PROCESSED,pd);
     }
     if(ydb[tk].json){
       try{
@@ -705,56 +587,14 @@ function rebuildProcessed(){
 }
 
 // ════════════════════════════════════════════════════════════
-// UPLOAD SCREEN
-// ════════════════════════════════════════════════════════════
-const pendingFiles={t1:{csv:null,json:null},t2:{csv:null,json:null},t3:{csv:null,json:null}};
-
-function buildYearSelectors(){
-  // Upload screen selector — all years
-  const usel=document.getElementById('upload-year-sel');
-  if(usel) usel.innerHTML=SCHOOL_YEARS.map(y=>`<option value="${y}"${y===currentYear?' selected':''}>${y}</option>`).join('');
-  // Topbar dropdown — only years with data loaded
-  const tsel=document.getElementById('year-display');
-  if(tsel){
-    const yearsWithData=SCHOOL_YEARS.filter(y=>DB[y]&&Object.values(DB[y]).some(t=>t.csv||t.json));
-    // Always include currentYear even if somehow not in the list
-    if(!yearsWithData.includes(currentYear)) yearsWithData.push(currentYear);
-    yearsWithData.sort();
-    tsel.innerHTML=yearsWithData.map(y=>`<option value="${y}"${y===currentYear?' selected':''}>${y}</option>`).join('');
-  }
-}
-
-function goToUpload(){
-  // Show upload screen, hide dashboard
-  document.getElementById('upload-screen').style.display='flex';
-  document.getElementById('single-view').style.display='none';
-  document.getElementById('chips-bar').style.display='none';
-  document.getElementById('legend').style.display='none';
-  document.getElementById('year-badge-wrap').style.display='none';
-  document.getElementById('add-year-btn').style.display='none';
-  document.getElementById('manage-btn').style.display='none';
-  // Show back button only if there is already data loaded
-  document.getElementById('back-to-dashboard-btn').style.display=ALL_TEAMS.length?'block':'none';
-  // Reset pending files
-  for(const tk of ['t1','t2','t3']) pendingFiles[tk]={csv:null,json:null};
-  // Reset year selector to next year after current
-  const nextIdx=Math.min(SCHOOL_YEARS.indexOf(currentYear)+1, SCHOOL_YEARS.length-1);
-  const usel=document.getElementById('upload-year-sel');
-  if(usel) usel.value=SCHOOL_YEARS[nextIdx];
-  buildUploadGrid();
-}
-
-// ════════════════════════════════════════════════════════════
 // DASHBOARD
 // ════════════════════════════════════════════════════════════
 function showDashboard(){
-  document.getElementById('upload-screen').style.display='none';
+  document.getElementById('loading-screen').style.display='none';
   document.getElementById('legend').style.display='flex';
   document.getElementById('year-badge-wrap').style.display='flex';
-  document.getElementById('add-year-btn').style.display='';
-  document.getElementById('manage-btn').style.display='';
   document.getElementById('view-toggle').style.display='flex';
-  buildYearSelectors();
+  buildYearDropdown();
   buildChips();
   if(ALL_TEAMS.length){
     if(!currentTeam||!ALL_TEAMS.includes(currentTeam)) currentTeam=ALL_TEAMS[0];
@@ -763,96 +603,20 @@ function showDashboard(){
   setMainView('building');
 }
 
-function buildUploadGrid(){
-  const year=document.getElementById('upload-year-sel')?.value||currentYear;
-  ensureYear(year);
-  const ydb=DB[year];
-  const grid=document.getElementById('upload-grid');
-  grid.innerHTML='';
-  for(const t of [1,2,3]){
-    const tk='t'+t;
-    const hasCSV=!!ydb[tk].csv;
-    const hasJSON=!!ydb[tk].json;
-    const card=document.createElement('div');
-    card.className='upload-card';
-    card.id='ucard-'+tk;
-    card.innerHTML=`<h3>Trimester ${t}</h3>
-      <div class="upload-row">
-        <label>Survey CSV</label>
-        <label class="file-upload-btn ${hasCSV?'loaded':''}" id="csv-btn-${tk}">
-          <span id="csv-label-${tk}">${hasCSV?'✓ CSV loaded':'Choose CSV file'}</span>
-          <input type="file" accept=".csv" class="file-input" onchange="handleFile(event,'${tk}','csv')">
-        </label>
-        <div class="upload-status ${hasCSV?'ok':''}" id="csv-status-${tk}">${hasCSV?'Data loaded from storage':''}</div>
-      </div>
-      <div class="upload-row">
-        <label>Comments JSON</label>
-        <label class="file-upload-btn ${hasJSON?'loaded':''}" id="json-btn-${tk}">
-          <span id="json-label-${tk}">${hasJSON?'✓ JSON loaded':'Choose JSON file'}</span>
-          <input type="file" accept=".json" class="file-input" onchange="handleFile(event,'${tk}','json')">
-        </label>
-        <div class="upload-status ${hasJSON?'ok':''}" id="json-status-${tk}">${hasJSON?'Data loaded from storage':''}</div>
-      </div>
-      ${hasCSV||hasJSON?`<button class="clear-btn" onclick="clearTri('${tk}')">✕ Clear Trimester ${t} data</button>`:''}`;
-    grid.appendChild(card);
-  }
-  updateLoadBtn();
-}
-
-function handleFile(e,tk,type){
-  const file=e.target.files[0];
-  if(!file)return;
-  const reader=new FileReader();
-  reader.onload=ev=>{
-    pendingFiles[tk][type]=ev.target.result;
-    const btn=document.getElementById(`${type}-btn-${tk}`);
-    const lbl=document.getElementById(`${type}-label-${tk}`);
-    const status=document.getElementById(`${type}-status-${tk}`);
-    btn.classList.add('loaded');
-    lbl.textContent='✓ '+file.name;
-    status.textContent='Ready to load';
-    status.className='upload-status ok';
-    updateLoadBtn();
-  };
-  reader.readAsText(file);
-}
-
-function updateLoadBtn(){
-  const hasAny=Object.values(pendingFiles).some(t=>t.csv||t.json)||
-    Object.values(yearDB(document.getElementById('upload-year-sel')?.value||currentYear)).some(t=>t.csv||t.json);
-  document.getElementById('load-btn').disabled=!hasAny;
-}
-
-function loadData(){
-  const year=document.getElementById('upload-year-sel').value;
-  currentYear=year;
-  ensureYear(year);
-  for(const tk of ['t1','t2','t3']){
-    if(pendingFiles[tk].csv)DB[year][tk].csv=pendingFiles[tk].csv;
-    if(pendingFiles[tk].json)DB[year][tk].json=pendingFiles[tk].json;
-    pendingFiles[tk]={csv:null,json:null};
-  }
-  saveToStorage();
-  rebuildProcessed();
-  if(ALL_TEAMS.length)showDashboard();
-  else alert('No valid team data found. Check that your CSV has Role, Trimester, and COLLABORATIVE TEAM columns.');
-}
-
-function clearTri(tk){
-  const year=document.getElementById('upload-year-sel')?.value||currentYear;
-  ensureYear(year);
-  DB[year][tk]={csv:null,json:null};
-  pendingFiles[tk]={csv:null,json:null};
-  saveToStorage();
-  buildUploadGrid();
+function buildYearDropdown(){
+  const tsel=document.getElementById('year-display');
+  if(!tsel) return;
+  const yearsWithData=SCHOOL_YEARS.filter(y=>DB[y]&&Object.values(DB[y]).some(t=>t.csv||t.json));
+  if(!yearsWithData.includes(currentYear)) yearsWithData.push(currentYear);
+  yearsWithData.sort();
+  tsel.innerHTML=yearsWithData.map(y=>`<option value="${y}"${y===currentYear?' selected':''}>${y}</option>`).join('');
 }
 
 function switchYear(year){
   currentYear=year;
-  saveToStorage();
   rebuildProcessed();
   buildChips();
-  buildYearSelectors();
+  buildYearDropdown();
   currentTeam=ALL_TEAMS[0]||null;
   // Keep whichever tri was selected, fall back if no data for it
   const targetTri = hasTriData(currentTeam, currentSingleTri) ? currentSingleTri : getDefaultTri(currentTeam);
@@ -993,35 +757,6 @@ function renderSingleScores(team,t,triData){
       <div class="domain-detail" id="dd-${uid}">${qHTML}</div>
     </div>`;
   }
-  // PLC Question chart (informational, not scored)
-  const plcCounts=PLC_DATA[t]?.[team]||null;
-  if(plcCounts&&plcCounts.some(c=>c>0)){
-    const maxCount=Math.max(...plcCounts,1);
-    const plcColors=['#4a7fd4','#3aaa7a','#f07820','#a050c0'];
-    let plcRows=PLC_LABELS.map((label,i)=>{
-      const count=plcCounts[i];
-      const w=Math.round((count/maxCount)*100);
-      return`<div style="display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid #f0ede8">
-        <div style="font-size:0.82em;color:#444">${label}</div>
-        <div style="display:flex;align-items:center;gap:8px">
-          <div class="q-bar-track" style="flex:1"><div class="q-bar-fill" style="width:${w}%;background:${plcColors[i]}"><span class="q-bar-score">${count}</span></div></div>
-          <div style="width:40px;text-align:right;font-size:0.8em;color:#666">${count} sel.</div>
-        </div>
-      </div>`;
-    }).join('');
-    html+=`<div class="domain-section">
-      <div class="domain-header" onclick="toggleD('s-plc')">
-        <div class="dtoggle" id="dtog-s-plc">▶</div>
-        <div class="dname" style="grid-column:2/5">PLC Focus Question</div>
-        <div style="font-size:0.75em;color:#888;font-style:italic;white-space:nowrap">Not scored</div>
-        <div></div>
-      </div>
-      <div class="domain-detail" id="dd-s-plc">
-        <div style="font-size:0.8em;color:#888;margin-bottom:6px">Select all that apply — number of respondents selecting each question</div>
-        ${plcRows}
-      </div>
-    </div>`;
-  }
   // Summary
   const ctR=triData.CT??triData.Teacher;const idsR=triData.Coach;const admR=triData.Admin;
   html+=`<div class="summary-strip">${DOMAIN_KEYS.map((dk,i)=>{
@@ -1135,83 +870,12 @@ function renderSingleComments(team,t){
           <div class="rater-block"><div class="rater-tag rt-ct">CT Members</div><div class="rater-text${!ctTxt?' empty':''}">${ctTxt||'No comments submitted.'}</div></div>
           <div class="rater-block"><div class="rater-tag rt-ids">Coach</div><div class="rater-text${!idsTxt?' empty':''}">${idsTxt||'No comment submitted.'}</div></div>
           <div class="rater-block"><div class="rater-tag rt-adm">Admin</div><div class="rater-text${!admTxt?' empty':''}">${admTxt||'No comment submitted.'}</div></div>
-        `:'<div class="no-comments">No comments loaded for this trimester. Upload a comments JSON file.</div>'}
+        `:'<div class="no-comments">No comments available for this trimester.</div>'}
       </div>
     </div>`;
   }
   body.innerHTML=html;
 }
-
-// ════════════════════════════════════════════════════════════
-// MANAGE MODAL
-// ════════════════════════════════════════════════════════════
-function buildModalGrid(){
-  const grid=document.getElementById('modal-grid');
-  grid.innerHTML='';
-  const yearRow=document.createElement('div');
-  yearRow.style='grid-column:1/-1;display:flex;align-items:center;gap:10px;margin-bottom:6px;';
-  yearRow.innerHTML=`<label style="font-size:.8rem;font-weight:600;color:var(--navy);">School Year:</label>
-    <select id="modal-year-sel" onchange="buildModalGrid()" style="border:2px solid var(--warm-gray);background:white;padding:5px 28px 5px 10px;border-radius:6px;font-family:'DM Sans',sans-serif;font-size:.82rem;font-weight:600;color:var(--navy);cursor:pointer;">
-      ${SCHOOL_YEARS.map(y=>`<option value="${y}"${y===currentYear?' selected':''}>${y}</option>`).join('')}
-    </select>
-    <span style="font-size:.72rem;color:var(--mid-gray);font-style:italic;">Upload or replace data for any year without losing other years</span>`;
-  grid.appendChild(yearRow);
-  const modalYear=document.getElementById('modal-year-sel')?.value||currentYear;
-  ensureYear(modalYear);
-  const ydb=DB[modalYear];
-  for(const t of [1,2,3]){
-    const tk='t'+t;
-    const card=document.createElement('div');
-    card.className='modal-tri';
-    card.innerHTML=`<h3>Trimester ${t}</h3>
-      <div class="modal-file-row">
-        <label>Survey CSV</label>
-        <label class="mf-btn ${ydb[tk].csv?'loaded':''}" id="mcsv-btn-${tk}">
-          <span id="mcsv-lbl-${tk}">${ydb[tk].csv?'✓ Loaded':'Upload CSV'}</span>
-          <input type="file" accept=".csv" class="file-input" onchange="modalFile(event,'${tk}','csv','${modalYear}')">
-        </label>
-        ${ydb[tk].csv?`<button class="mf-clear" onclick="clearModalTri('${tk}','${modalYear}')">✕ Remove</button>`:''}
-      </div>
-      <div class="modal-file-row">
-        <label>Comments JSON</label>
-        <label class="mf-btn ${ydb[tk].json?'loaded':''}" id="mjson-btn-${tk}">
-          <span id="mjson-lbl-${tk}">${ydb[tk].json?'✓ Loaded':'Upload JSON'}</span>
-          <input type="file" accept=".json" class="file-input" onchange="modalFile(event,'${tk}','json','${modalYear}')">
-        </label>
-        ${ydb[tk].json?`<button class="mf-clear" onclick="clearModalJson('${tk}','${modalYear}')">✕ Remove</button>`:''}
-      </div>`;
-    grid.appendChild(card);
-  }
-}
-
-function clearModalTri(tk,year){
-  ensureYear(year);DB[year][tk]={csv:null,json:null};saveToStorage();
-  if(year===currentYear){rebuildProcessed();buildChips();}
-  buildModalGrid();
-}
-function clearModalJson(tk,year){
-  ensureYear(year);DB[year][tk].json=null;saveToStorage();
-  if(year===currentYear) rebuildProcessed();
-  buildModalGrid();
-}
-function modalFile(e,tk,type,year){
-  const file=e.target.files[0];if(!file)return;
-  const reader=new FileReader();
-  reader.onload=ev=>{
-    ensureYear(year);DB[year][tk][type]=ev.target.result;saveToStorage();
-    if(year===currentYear){rebuildProcessed();buildYearSelectors();buildChips();if(currentTeam)renderSingle(currentTeam,currentSingleTri);}
-    else buildYearSelectors();
-    buildModalGrid();
-    const btn=document.getElementById(`m${type}-btn-${tk}`);
-    const lbl=document.getElementById(`m${type}-lbl-${tk}`);
-    if(btn)btn.classList.add('loaded');
-    if(lbl)lbl.textContent='✓ '+file.name;
-  };
-  reader.readAsText(file);
-}
-
-function openModal(){buildModalGrid();document.getElementById('modal-overlay').classList.add('open');}
-function closeModal(){document.getElementById('modal-overlay').classList.remove('open');}
 
 // ════════════════════════════════════════════════════════════
 // TOGGLE HELPERS
@@ -1360,7 +1024,7 @@ function getBHScoreForYear(team, tri, rater, year){
     if(!ydb[tk].csv) continue;
     const rows = parseCSV(ydb[tk].csv);
     const pd = processCSV(rows);
-    if(pd) Object.assign(processed, pd.processed||pd);
+    if(pd) Object.assign(processed, pd);
   }
   const td = processed[tri]?.[team];
   if(!td) return null;
@@ -1630,47 +1294,32 @@ async function fetchRemoteData(){
   return anyLoaded;
 }
 
-function showLoadingScreen(){
-  const el = document.getElementById('upload-screen');
-  el.style.display = 'flex';
-  el.innerHTML = `<div style="display:flex;flex-direction:column;align-items:center;gap:16px;padding:60px 20px;">
-    <div class="upload-title">CT Growth Hub</div>
-    <div style="font-size:0.85rem;color:var(--mid-gray);">Loading data…</div>
-    <div style="width:40px;height:40px;border:3px solid var(--warm-gray);border-top-color:var(--navy);border-radius:50%;animation:spin .8s linear infinite;"></div>
-  </div>`;
+(async function init(){
+  loadInquiry();
+  loadRosterFlags();
+
+  // Show spinner while fetching
+  const ls = document.getElementById('loading-screen');
+  ls.style.display = 'flex';
   if(!document.getElementById('spin-style')){
     const s=document.createElement('style');
     s.id='spin-style';
     s.textContent='@keyframes spin{to{transform:rotate(360deg)}}';
     document.head.appendChild(s);
   }
-}
 
-(async function init(){
-  loadInquiry();
-  loadRosterFlags();
-  const usel=document.getElementById('upload-year-sel');
-  if(usel) usel.innerHTML=SCHOOL_YEARS.map(y=>`<option value="${y}"${y===DEFAULT_YEAR?' selected':''}>${y}</option>`).join('');
-
-  // Try to fetch remote data first
-  showLoadingScreen();
   const remoteLoaded = await fetchRemoteData();
-
   if(remoteLoaded){
     currentYear = DEFAULT_REMOTE_YEAR;
     rebuildProcessed();
-    if(ALL_TEAMS.length){
-      showDashboard();
-      return;
-    }
-  }
-
-  // Fall back to localStorage or upload screen
-  if(loadFromStorage()){
-    rebuildProcessed();
     if(ALL_TEAMS.length){ showDashboard(); return; }
   }
-  buildUploadGrid();
+
+  // No data available — show a simple error state
+  ls.innerHTML = `<div style="text-align:center;padding:40px 20px;">
+    <div style="font-family:'DM Serif Display',serif;font-size:1.8rem;color:var(--navy);margin-bottom:12px;">CT Growth Hub</div>
+    <div style="font-size:0.85rem;color:var(--red);">Could not load data. Please check your connection and try refreshing.</div>
+  </div>`;
 })();
 </script>
 </body>
