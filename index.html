@@ -424,7 +424,7 @@ const SCORE_COLS = {
     'Does CT use common summative assessments?',
     'Is the ASSESSMENT gradebook category identical across the course?',
     'Does CT use common formative assessments?',
-    'Does CT use assessment data to adjust assessments?'
+    'Does CT use assessment data to adjust instruction?'
   ],
   ACHIEVEMENT: [
     'Does CT provide extension activities for students who have mastered the material?',
@@ -449,6 +449,8 @@ const SCORE_COLS = {
 };
 const DOMAIN_KEYS = Object.keys(SCORE_COLS);
 const DOMAIN_DISPLAY = ['Curriculum','Assessment','Achievement','Instruction','Group Efficacy'];
+const PLC_COL = 'Which of the four PLC questions do you spend the most time on?';
+const PLC_LABELS = ['Q1: What do we want students to learn?','Q2: How will we know they learned it?','Q3: What do we do when they don\'t learn?','Q4: What do we do when they already know it?'];
 const SHORT_Q = {
   'Does CT have priority standards/ supporting standards?':'Priority standards identified',
   'Are assessments aligned with priority standards?':'Assessments aligned to standards',
@@ -457,7 +459,7 @@ const SHORT_Q = {
   'Does CT use common summative assessments?':'Common summative assessments',
   'Is the ASSESSMENT gradebook category identical across the course?':'Identical assessment gradebook category',
   'Does CT use common formative assessments?':'Common formative assessments',
-  'Does CT use assessment data to adjust assessments?':'Data used to adjust assessments',
+  'Does CT use assessment data to adjust instruction?':'Data used to adjust instruction',
   'Does CT provide extension activities for students who have mastered the material?':'Extension activities for mastery',
   'Does CT utilize MTSS/RTI framework to identify and support students who need additional academic support?':'MTSS/RTI framework utilized',
   'Are retake requirements common throughout the CT and do they comply with the district retake policy?':'Common retake requirements (district-compliant)',
@@ -579,7 +581,30 @@ function processCSV(rows){
       }
     }
   }
-  return processed;
+
+  // Collect PLC question selections (multi-select, not scored)
+  // plcData: tri -> team -> counts [q1,q2,q3,q4]
+  const plcData={};
+  const plcColKey=Object.keys(rows[0]||{}).find(k=>k.trim().toLowerCase().includes('plc questions')||k.trim().toLowerCase().includes('four plc'));
+  if(plcColKey){
+    for(const row of rows){
+      const tri=parseInt((row[triCol]||'').trim());
+      const team=normTeam(row[teamCol]);
+      if(!tri||!team)continue;
+      if(!plcData[tri])plcData[tri]={};
+      if(!plcData[tri][team])plcData[tri][team]=[0,0,0,0];
+      const val=(row[plcColKey]||'').trim();
+      if(!val)continue;
+      // Selections may be comma-separated or individual checkboxes like "1, 3"
+      const selections=val.split(/[,;]+/).map(s=>s.trim()).filter(Boolean);
+      for(const sel of selections){
+        const n=parseInt(sel);
+        if(n>=1&&n<=4)plcData[tri][team][n-1]++;
+      }
+    }
+  }
+
+  return {processed, plcData};
 }
 
 function round2(n){return Math.round(n*100)/100;}
@@ -621,20 +646,27 @@ function loadFromStorage(){
 // ════════════════════════════════════════════════════════════
 let PROCESSED={};  // tri -> team -> rater -> domain data
 let COMMENTS={};   // tri -> team -> domain -> {Teacher,Coach,Admin}
+let PLC_DATA={};   // tri -> team -> [q1count,q2count,q3count,q4count]
 let ALL_TEAMS=[];
 
 let currentTeam=null;
 let currentSingleTri=1;
 
 function rebuildProcessed(){
-  PROCESSED={};COMMENTS={};
+  PROCESSED={};COMMENTS={};PLC_DATA={};
   const ydb=yearDB(currentYear);
   for(const t of [1,2,3]){
     const tk='t'+t;
     if(ydb[tk].csv){
       const rows=parseCSV(ydb[tk].csv);
-      const pd=processCSV(rows);
-      if(pd)Object.assign(PROCESSED,pd);
+      const result=processCSV(rows);
+      if(result){
+        Object.assign(PROCESSED,result.processed);
+        for(const [tri,teams] of Object.entries(result.plcData||{})){
+          PLC_DATA[tri]=PLC_DATA[tri]||{};
+          Object.assign(PLC_DATA[tri],teams);
+        }
+      }
     }
     if(ydb[tk].json){
       try{
@@ -959,6 +991,35 @@ function renderSingleScores(team,t,triData){
         ${avgBadge(triData,dk)}
       </div>
       <div class="domain-detail" id="dd-${uid}">${qHTML}</div>
+    </div>`;
+  }
+  // PLC Question chart (informational, not scored)
+  const plcCounts=PLC_DATA[t]?.[team]||null;
+  if(plcCounts&&plcCounts.some(c=>c>0)){
+    const maxCount=Math.max(...plcCounts,1);
+    const plcColors=['#4a7fd4','#3aaa7a','#f07820','#a050c0'];
+    let plcRows=PLC_LABELS.map((label,i)=>{
+      const count=plcCounts[i];
+      const w=Math.round((count/maxCount)*100);
+      return`<div style="display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid #f0ede8">
+        <div style="font-size:0.82em;color:#444">${label}</div>
+        <div style="display:flex;align-items:center;gap:8px">
+          <div class="q-bar-track" style="flex:1"><div class="q-bar-fill" style="width:${w}%;background:${plcColors[i]}"><span class="q-bar-score">${count}</span></div></div>
+          <div style="width:40px;text-align:right;font-size:0.8em;color:#666">${count} sel.</div>
+        </div>
+      </div>`;
+    }).join('');
+    html+=`<div class="domain-section">
+      <div class="domain-header" onclick="toggleD('s-plc')">
+        <div class="dtoggle" id="dtog-s-plc">▶</div>
+        <div class="dname" style="grid-column:2/5">PLC Focus Question</div>
+        <div style="font-size:0.75em;color:#888;font-style:italic;white-space:nowrap">Not scored</div>
+        <div></div>
+      </div>
+      <div class="domain-detail" id="dd-s-plc">
+        <div style="font-size:0.8em;color:#888;margin-bottom:6px">Select all that apply — number of respondents selecting each question</div>
+        ${plcRows}
+      </div>
     </div>`;
   }
   // Summary
@@ -1299,7 +1360,7 @@ function getBHScoreForYear(team, tri, rater, year){
     if(!ydb[tk].csv) continue;
     const rows = parseCSV(ydb[tk].csv);
     const pd = processCSV(rows);
-    if(pd) Object.assign(processed, pd);
+    if(pd) Object.assign(processed, pd.processed||pd);
   }
   const td = processed[tri]?.[team];
   if(!td) return null;
