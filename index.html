@@ -719,9 +719,11 @@ function renderSingleTri(team,t,panel){
     [1,2,3].forEach(i=>document.getElementById(`stab-${p}-${i}`)?.classList.toggle('active',i===t));
   });
   const triData=PROCESSED[t]?.[team];
-  if(panel==='left'||panel==='both') renderSingleScores(team,t,triData);
-  if(panel==='right'||panel==='both'){drawSpider(triData);renderSingleComments(team,t);}
-  // Keep inquiry in sync with selected trimester
+  // Always re-render all three sections, regardless of which tab strip was
+  // clicked, so Scores / Domain Overview / Inquiry stay in sync.
+  renderSingleScores(team,t,triData);
+  drawSpider(triData);
+  renderSingleComments(team,t);
   renderInquiry(team,t);
 }
 
