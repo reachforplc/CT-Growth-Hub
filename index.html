@@ -1315,7 +1315,10 @@ async function fetchRemoteData(){
   if(remoteLoaded){
     currentYear = DEFAULT_REMOTE_YEAR;
     rebuildProcessed();
-    if(ALL_TEAMS.length){ showDashboard(); return; }
+    // Show the dashboard even if the default year has no data yet, as long as
+    // some year in REMOTE_YEARS loaded — the Year dropdown lets people switch.
+    showDashboard();
+    return;
   }
 
   // No data available — show a simple error state
