@@ -345,7 +345,7 @@ body{background:#c8c4bc;font-family:'DM Sans',sans-serif;color:var(--text);min-h
 // ════════════════════════════════════════════════════════════
 // DATA LAYER
 // ════════════════════════════════════════════════════════════
-const SCHOOL_YEARS = ['2026-27','2027-28','2028-29','2029-30','2030-31','2031-32','2032-33','2033-34','2034-35','2035-36'];
+const SCHOOL_YEARS = ['2026-27','2027-28','2028-29','2029-30','2030-31','2031-32','2032-33','2033-34','2034-35','2035-36','test'];
 const DEFAULT_YEAR = '2026-27';
 // DB structure: { '2024-25': { t1:{csv,json}, t2:{csv,json}, t3:{csv,json} }, ... }
 let DB = {};
@@ -1270,7 +1270,7 @@ function escHtml(s){
 // File structure: data/{year}/survey_T{1|2|3}.csv and comments_T{1|2|3}.json
 // To add a new school year, add it to REMOTE_YEARS below.
 const DATA_BASE_URL = 'https://reachforplc.github.io/CT-Growth-Hub/data';
-const REMOTE_YEARS = ['2026-27','2027-28']; // add new years here as data becomes available
+const REMOTE_YEARS = ['2026-27','test']; // add new years here as data becomes available
 const DEFAULT_REMOTE_YEAR = '2026-27';      // the year the app opens on by default
 
 async function fetchRemoteData(){
